@@ -4,7 +4,7 @@
  }
  .cards{
    margin-top: 100px;
-   margin-left: 50px;
+   margin-left: 60px;
  }
  .col {
    flex: 0 0 0%;
@@ -183,7 +183,7 @@
    display: block;
    position: absolute;
    top: 73%;
-   left: 13%;
+   left: 10%;
 }
 .closepopup{
    display: block;
@@ -220,3 +220,8 @@
    display: block;
    
 }
+@media (max-width: 680px)  {
+   .popup {
+     display: none;
+   }
+ }
