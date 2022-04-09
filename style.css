@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+ }
+ .cards{
+   margin-top: 100px;
+   margin-left: 70px;
+ }
+ .col {
+   flex: 0 0 0%;
+   margin-left: -20px;
+   
+}
+ .product-item {
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #eee;
+    background: white;
+    font-family: "Open Sans";
+    overflow: hidden;
+    transition: .4s linear;
+    cursor: pointer;
+ }
+ .product-img{
+    height: 180px;
+    margin-top: 20px;
+ }
+
+ .product-img img {
+     margin: 0 auto;
+    display: block;
+    width: 50%;
+    
+ }
+ .product-list {
+    margin-top: 15px;
+    height: 200px;
+ }
+ .product-list h3 {
+    font-weight: 700;
+    color: #39404B;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 2;
+ }
+ .price {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+ }
+ .stars {
+    height: 14px;
+    line-height: 14px;
+    margin: 7px 0;
+ }
+ .stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    color: #EFB71C;
+    font-size: 14px;
+   /* font-family: FontAwesome;*/
+ }
+ .actions {
+    border-top: 1px solid #eee;
+    padding-top: 4px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    display: none;
+    margin-top: 20px;
+ }
+ .actions:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+ .add-to-cart, .add-to-links {
+    float: left;
+ }
+ .product-item:hover .actions{
+     display: block;
+     
+ }
+ .product-item:hover{
+     border: 2px double red; 
+ }
+ .cart-button {
+    text-decoration: none;
+    color:white;
+    background: green;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    transition: .4s linear;
+    border-radius: 50px;
+    text-align: center;
+    padding:10px 15px 10px 15px;
+ }
+
+ .add-to-cart:hover .cart-button, .wishlist:hover, .compare:hover {
+    color: #E34D38;
+ }
+ .wishlist, .compare {
+    color: #8C877C;
+    padding-left: 20px;
+    transition: .4s linear;
+ }
+ .wishlist:after, .compare:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 13px;
+ }
+ .wishlist:after {
+    content: "\f004";
+ }
+ .compare:after {
+    content: "\2696";
+ }
+.cards-percent{
+    background: red;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cards-percent-text{
+    background: green;
+    color: white;
+    padding: 5px;   
+    font-size: 12px;
+    font-weight: bold;
+}
+.cards-text{
+    font-size: 12px;
+    color: #1E90FF;
+    margin: 5px;
+}
+.cards-name{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 9px;
+}
+.cards-reviews{
+    font-size: 12px;
+    color: #8C877C;
+    margin-left: 10px;
+  font-weight: bold;
+}
+.cards-price-text{ 
+    font-size: 12px;
+    color: #8C877C;
+  margin: 0;
+}
+.price-kesh{
+    font-size: 12px;
+    background: #ffc26c;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.cards-percent-text-red{
+   background: red;
+    color: white;
+    padding: 5px;   
+    font-size: 12px;
+    font-weight: bold;
+}
+.cards-name-text{
+   font-size: 14px;
+   font-weight: bold;
+}
+.cards-name-t{
+   margin-top: 30px;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.popup img{
+   width:50px;
+   z-index: 1;
+}
+.p-popup{
+   position: relative;
+   width: 250px;
+   height: 150px;
+}
+
+.popup{
+   display: block;
+   position: absolute;
+   top: -30%;
+   left:10%;
+}
+.closepopup{
+   display: block;
+   position: absolute;
+   top: -30%; 
+   left: 100%;
+   cursor: pointer;
+}
+.popup:before {
+   content: "";
+   background:blue;
+   background-size: cover;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   margin-right: 5px;
+   display: inline-block;
+   display: block;
+   position: absolute;
+   top: -10%; 
+   left: -30%;
+  z-index: 2;
+  opacity: 0.5;
+ }
+ .product-item:hover .p-popup{
+   height: 0px;
+   margin-top: -50px;
+ }
+ .actions-key{
+    font-size: 12px;
+    text-align: right;
+    color: #8C877C;
+    display: block;
+    display: none;
+    font-weight: bold;
+ }
+ .product-item:hover .actions-key{
+   display: block;
+   
+}
